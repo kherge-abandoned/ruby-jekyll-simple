@@ -16,6 +16,9 @@ menu:
     - { label: Portfolio, url: /portfolio/ }
     - { label: Blog, url: /blog/ }
 
+paginate: 100
+paginate_path: /blog/page:num
+
 permalink: /blog/:year/:month/:title/
 
 # Post Configuration
