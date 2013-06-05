@@ -10,7 +10,7 @@ menu:
   bottom:
     - { label: RSS, url: /blog/feed.xml }
   top:
-    - { label: About, url: / }
+    - { label: Example, url: / }
     - { label: Portfolio, url: /portfolio/ }
     - { label: Blog, url: /blog/ }
 
