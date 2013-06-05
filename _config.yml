@@ -21,3 +21,8 @@ disqus: ~
 
 # Markup Configuration
 pygments: true
+
+# Content Management
+exclude:
+  - LICENSE
+  - README.md
