@@ -1,6 +1,8 @@
 # Site Information
 name: Simple Jekyll Site
 
+description: This is an example Simple Jekyll site.
+
 copyright: Simple Owner
 
 timezone: America/Los_Angeles
