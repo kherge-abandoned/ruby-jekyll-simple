@@ -16,7 +16,7 @@ menu:
     - { label: Portfolio, url: /portfolio/ }
     - { label: Blog, url: /blog/ }
 
-permalink: /blog/:year/:month/:title/index.html
+permalink: /blog/:year/:month/:title/
 
 # Post Configuration
 disqus: ~
