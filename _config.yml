@@ -1,0 +1,23 @@
+# Site Information
+name: Simple Jekyll Site
+
+copyright: Simple Owner
+
+timezone: America/Los_Angeles
+
+# Site Navigation
+menu:
+  bottom:
+    - { label: RSS, url: /blog/feed.xml }
+  top:
+    - { label: About, url: / }
+    - { label: Portfolio, url: /portfolio/ }
+    - { label: Blog, url: /blog/ }
+
+permalink: /blog/:year/:month/:title/index.html
+
+# Post Configuration
+disqus: ~
+
+# Markup Configuration
+pygments: true
