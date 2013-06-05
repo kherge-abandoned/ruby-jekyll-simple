@@ -1,0 +1,203 @@
+/*!
+ * Simple
+ *
+ * Copyright 2013 Kevin Herrera
+ * Licensed under the MIT License
+ * http://github.com/herrera-io/html-simple
+ */
+
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:400,700|Open+Sans:400,400italic,700,700italic");
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 25px;
+}
+
+.container-narrow {
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.content blockquote {
+    margin: 30px;
+}
+
+.content blockquote p {
+    font-size: 14px;
+}
+
+.content blockquote.pull-left,
+.content blockquote.pull-right {
+    max-width: 350px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content h1 { font-size: 28px; }
+.content h2 { font-size: 24px; }
+.content h3 { font-size: 20px; }
+.content h4 { font-size: 16px; }
+.content h5 { font-size: 14px; }
+.content h6 { font-size: 12px; }
+
+.content p > img.pull-left {
+    margin: 0 20px 10px 0;
+}
+
+.content p > img.pull-right {
+    margin: 0 0 10px 20px;
+}
+
+.content pre {
+    line-height: normal;
+}
+
+.content + .content {
+    /*border-top: 1px dotted #c7c7c7;*/
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.content > .page-header:first-child {
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.content-details {
+    cursor: default;
+    font-size: 12px;
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.content-details i {
+    margin-right: 5px;
+}
+
+.content-details li {
+    display: inline-block;
+}
+
+.content-details li + li {
+    margin-left: 15px;
+}
+
+.content-photo .carousel .carousel-control {
+    line-height: 25px;
+}
+
+.muted a {
+    color: #999999;
+}
+
+.muted a:hover,
+.muted a:focus {
+    color: #2d2d2d;
+}
+
+.nav-posts > li > a {
+    display: inline !important;
+}
+
+.nav-posts > li > a:focus,
+.nav-posts > li > a:hover {
+    background: none;
+}
+
+.nav-posts > li > span {
+    cursor: default;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: right;
+    width: 150px;
+}
+
+.nav-posts > li > span > i {
+    margin-left: 10px;
+}
+
+.page-header a {
+    color: #333333;
+}
+
+.page-header a:focus,
+.page-header a:hover {
+    color: #696969;
+    text-decoration: none;
+}
+
+.row-footer {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.row-footer p {
+    cursor: default;
+    margin-bottom: 0;
+    padding: 8px 20px;
+}
+
+.row-footer .nav > li > a:hover,
+.row-footer .nav > li > a:focus {
+    background: none;
+}
+
+.row-footer .nav-pills {
+    margin-bottom: 0;
+    padding-right: 18px;
+}
+
+.row-header .navbar > .navbar-inner {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.row-pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.row-pagination .pagination ul {
+    box-shadow: none;
+}
+
+.row-pagination .pager li > a,
+.row-pagination .pagination ul > li > a,
+.row-pagination .pagination ul > li > a:focus,
+.row-pagination .pagination ul > li > a:hover {
+    background: none;
+    border: none;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    background: none;
+    box-shadow: none;
+}
+
+.table-chat td,
+.table-chat th {
+    padding: 8px 4px;
+}
+
+.table-chat th {
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.table-chat th:first-child {
+    text-align: right;
+    width: 100px;
+}
