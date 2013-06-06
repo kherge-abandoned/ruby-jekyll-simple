@@ -12,11 +12,11 @@ baseurl: /ruby-jekyll-simple
 
 menu:
   bottom:
-    - { label: RSS, url: /blog/feed.xml }
+    - { label: RSS, url: /ruby-jekyll-simple/blog/feed.xml }
   top:
-    - { label: Example, url: / }
-    - { label: Portfolio, url: /portfolio/ }
-    - { label: Blog, url: /blog/ }
+    - { label: Example, url: /ruby-jekyll-simple/ }
+    - { label: Portfolio, url: /ruby-jekyll-simple/portfolio/ }
+    - { label: Blog, url: /ruby-jekyll-simple/blog/ }
 
 paginate: 100
 paginate_path: /blog/page:num
