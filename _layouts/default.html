@@ -7,11 +7,11 @@ layout: default
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
-    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"/>
-    <link href="/assets/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
-    <link href="/assets/css/simple.css" rel="stylesheet" media="screen"/>
-    <link href="/assets/css/syntax.css" rel="stylesheet" media="screen"/>
+    <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="{{ site.baseurl }}/assets/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"/>
+    <link href="{{ site.baseurl }}/assets/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
+    <link href="{{ site.baseurl }}/assets/css/simple.css" rel="stylesheet" media="screen"/>
+    <link href="{{ site.baseurl }}/assets/css/syntax.css" rel="stylesheet" media="screen"/>
   </head>
   <body>
     <!-- header -->
@@ -26,7 +26,7 @@ layout: default
               <span class="icon-bar"></span>
             </a>
 {% endif %}
-            <a class="brand" href="{{ site.baseurl }}">{{ site.name }}</a>
+            <a class="brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
 {% if site.menu.top %}
             <div class="nav-collapse collapse">
               <ul class="nav pull-right">
@@ -58,9 +58,9 @@ layout: default
         <p>&copy; {{ site.time|date: "%Y" }} {{ site.copyright }}</p>
       </div>
     </div>
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/moment.min.js"></script>
-    <script src="/assets/js/simple.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/moment.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/simple.js"></script>
   </body>
 </html>

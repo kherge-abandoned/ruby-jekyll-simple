@@ -8,6 +8,8 @@ copyright: Simple Owner
 timezone: America/Los_Angeles
 
 # Site Navigation
+baseurl: ''
+
 menu:
   bottom:
     - { label: RSS, url: /blog/feed.xml }

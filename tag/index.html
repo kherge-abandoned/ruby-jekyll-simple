@@ -16,7 +16,7 @@ title: Tagged Posts
             );
 
             $.getJSON(
-              '{{ site.url }}/tag/posts.json',
+              '{{ site.baseurl }}/tag/posts.json',
               function (data) {
                 var found = false;
                 var posts = $('#posts');
