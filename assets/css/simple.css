@@ -126,12 +126,15 @@ body {
     margin-left: 10px;
 }
 
-.page-header a {
+.page-header a,
+.content-portfolio .media a {
     color: #333333;
 }
 
 .page-header a:focus,
-.page-header a:hover {
+.page-header a:hover,
+.content-portfolio .media a:focus,
+.content-portfolio .media a:hover {
     color: #696969;
     text-decoration: none;
 }

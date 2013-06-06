@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+      <div class="row-fluid content content-portfolio">
+{% if page.title %}
+        <h1 class="page-header">
+{% if page.title_link %}
+          <a href="{{ page.url }}">{{ page.title }}</a>
+{% else %}
+          {{ page.title }}
+{% endif %}
+        </h1>
+{% endif %}
+{% if page.project.photo %}
+        <p>
+          <img class="img-polaroid" src="{{ page.project.photo }}"/>
+        </p>
+{% endif %}
+        <div class="row-fluid">
+          <div class="{% if page.project.table %}span6{% else %}span12{% endif %}">
+{{ content }}
+          </div>
+{% if page.project.table %}
+          <div class="span6">
+{% for table in page.project.table %}
+            <h4>{{ table[0] }}</h4>
+            <table class="table table-hover">
+              <tbody>
+{% for row in table[1] %}
+                <tr>
+                  <th>{{ row.label }}</th>
+                  <td>{{ row.value }}</td>
+                </tr>
+{% endfor %}
+              </tbody>
+            </table>
+{% endfor %}
+{% endif %}
+{% if page.project.details %}
+{% for details in page.project.details %}
+            <h4>{{ details[0] }}</h4>
+            <ul>
+{% for item in details[1] %}
+              <li>{{ item }}</li>
+{% endfor %}
+            </ul>
+{% endfor %}
+{% endif %}
+          </div>
+        </div>
+        <ul class="content-details muted">
+          <li title="Posted on">
+            <i class="icon-calendar"></i> {{ page.date|date: "%B %d, %Y" }}
+          </li>
+          <li>
+            <i class="icon-globe"></i> <a href="{{ site.url }}{{ page.url }}">Permalink</a>
+          </li>
+{% if page.author %}
+          <li title="Posted by">
+            <i class="icon-user"></i> {{ page.author }}
+          </li>
+{% endif %}
+{% if page.tags != empty %}
+          <li title="Tags" class="pull-right hidden-phone">
+            <i class="icon-tags"></i>
+{% for tag in page.tags %}
+            <a href="/tag/?tag={{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
+{% endfor %}
+          </li>
+{% endif %}
+        </ul>
+      </div>
