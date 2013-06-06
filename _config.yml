@@ -31,3 +31,6 @@ pygments: true
 exclude:
   - LICENSE
   - README.md
+
+# Other Settings
+safe: true
