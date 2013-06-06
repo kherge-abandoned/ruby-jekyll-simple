@@ -6,7 +6,7 @@ layout: default
 {% if page.title %}
         <h1 class="page-header">
 {% if page.title_link %}
-          <a href="{{ page.url }}">{{ page.title }}</a>
+          <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
 {% else %}
           {{ page.title }}
 {% endif %}
@@ -54,7 +54,7 @@ layout: default
             <i class="icon-calendar"></i> {{ page.date|date: "%B %d, %Y" }}
           </li>
           <li>
-            <i class="icon-globe"></i> <a href="{{ site.url }}{{ page.url }}">Permalink</a>
+            <i class="icon-globe"></i> <a href="{{ site.baseurl }}{{ page.url }}">Permalink</a>
           </li>
 {% if page.author %}
           <li title="Posted by">
@@ -65,7 +65,7 @@ layout: default
           <li title="Tags" class="pull-right hidden-phone">
             <i class="icon-tags"></i>
 {% for tag in page.tags %}
-            <a href="/tag/?tag={{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
+            <a href="{{ site.baseurl }}/tag/?tag={{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
 {% endfor %}
           </li>
 {% endif %}

@@ -11,12 +11,12 @@ layout: default
         <ul class="pager">
 {% if paginator.previous_page %}
           <li class="previous">
-            <a href="{% if paginator.previous_page_path %}/blog/{{ paginator.previous_page_path }}{% else %}/blog/{% endif %}">&laquo; Newer</a>
+            <a href="{{ site.baseurl }}{% if paginator.previous_page_path %}blog/{{ paginator.previous_page_path }}{% else %}blog/{% endif %}">&laquo; Newer</a>
           </li>
 {% endif %}
 {% if paginator.next_page %}
           <li class="next">
-            <a href="/blog/{{ paginator.next_page_path }}">Older &raquo;</a>
+            <a href="{{ site.baseurl }}blog/{{ paginator.next_page_path }}">Older &raquo;</a>
           </li>
 {% endif %}
         </ul>
