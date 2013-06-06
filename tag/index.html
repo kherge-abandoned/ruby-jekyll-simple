@@ -1,0 +1,57 @@
+---
+layout: page
+title: Tagged Posts
+---
+
+        <p id="wait"><i class="icon-spinner icon-spin"></i> Please wait while we find the tagged posts.</p>
+        <ul id="posts" class="nav nav-posts hide"></ul>
+        <script type="text/javascript">
+          window.onload = function () {
+            $('head > title').text(
+              document.title = 'Posts for "' + $.queryString['tag'] + '"'
+            );
+
+            $('h1.page-header').text(
+              'Posts for "' + $.queryString['tag'] + '"'
+            );
+
+            $.getJSON(
+              '{{ site.url }}/tag/posts.json',
+              function (data) {
+                var found = false;
+                var posts = $('#posts');
+
+                for (var i in data) {
+                  var post = data[i];
+
+                  if (-1 < $.inArray($.queryString['tag'], post.tags)) {
+                    found = true;
+
+                    var item = $('<li></li>');
+                    var date = moment(post.date);
+
+                    item.append(
+                      $('<span class="post-date"><i class="icon-calendar"></i></span>')
+                        .prepend(date.format('MMMM Do, YYYY'))
+                    );
+
+                    item.append(
+                      $('<a></a>')
+                        .attr('href', post.url)
+                        .text(post.title)
+                    );
+
+                    posts.append(item);
+                  }
+                }
+
+                if (found) {
+                  $('#wait').hide();
+                  $('#posts').show();
+                } else {
+                  $('#wait').text('Sorry, but no posts were tagged with "' + $.queryString['tag']+ '".');
+                }
+              }
+            );
+          };
+        </script>
