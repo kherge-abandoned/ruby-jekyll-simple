@@ -8,7 +8,7 @@ copyright: Simple Owner
 timezone: America/Los_Angeles
 
 # Site Navigation
-baseurl: ''
+baseurl: http://herrera-io.github.io/ruby-jekyll-simple/
 
 menu:
   bottom:
