@@ -3,12 +3,12 @@ layout: json
 ---
 
 [
-{% for post in site.posts %}{% if post.title and post.tags != empty %}
+{% for post in site.posts %}
     {
         "date": "{{ post.date }}",
         "tags": [{% for tag in post.tags %}"{{ tag }}"{% if forloop.last == false %}, {% endif %}{% endfor %}],
         "title": "{{ post.title }}",
         "url": "{{ post.url }}"
     }{% if forloop.last == false %},{% endif %}
-{% endif %}{% endfor %}
+{% endfor %}
 ]
